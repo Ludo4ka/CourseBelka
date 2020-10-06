@@ -1,0 +1,79 @@
+body {
+  color: #0d5957;
+}
+h1 {
+  min-height: 35px;
+  padding-top: 5px;
+  padding-left: 15px;
+  font-size: 24px;
+  color: #c3c3c3;
+  background-color: #007f80;
+}
+.foto ul{
+  padding-bottom: 15px;
+  list-style: none;
+  height: 180px;
+}
+
+.foto li {
+  float: left;
+}
+
+.foto img {
+width: 100px;
+}
+
+.foto li:last-child {
+  float: right;
+  text-transform: uppercase;
+  padding-right: 900px;
+  padding-top: 50px;
+}
+.resume ul {
+  font-size: 18px;
+}
+
+.footer {
+  min-height: 50px;
+  padding-top: 5px;
+  padding-left: 15px;
+  color: #000000;
+  background-color: #007f80;
+}
+
+.footer ul {
+  font-size: 16px;
+  list-style: none;
+  height: 100px;
+}
+
+.footer li{
+  float: left;
+ vertical-align: middle;
+}
+
+.footer li:last-child {
+  float: right;
+  padding-right: 1000px;
+  background-image: url("../img/instagram.png");
+  background-repeat: no-repeat;
+  background-position: top left 10px;
+  }
+
+.social_btn {
+	display: inline-block;
+	width: 50px;
+  height: 50px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  background-position: 13px -358px;
+}
+
+.social_btn:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.social_btn:active {
+  border-color: #ffffff;
+  opacity: 0.1;
+}
+
