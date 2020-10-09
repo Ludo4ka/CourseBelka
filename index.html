@@ -1,12 +1,18 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
-  "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE>
 <html>
  <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Резюме</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
-<body>
+   <meta http-equiv="Content-Type"  content="text/html; charset=utf-8;">
+   <title>Резюме</title>
+   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+   <script>
+    function prove(f) {
+     if (confirm("Спасибо за ваше сообщение!")) 
+       f.submit();
+    }
+   </script>
+   
+ </head>
+ <body>
     <div> 
       <h1>Тестировщик/Junior QA</h1>
     </div>
@@ -16,22 +22,50 @@
         <li>Людмила Шушакова</li>
       </ul>
     </div>
-    <!--resume-->
-    <div class="resume"> 
+    <div class="resume">
       <ul>
         <li>Опыт работы:</li>
         <li>Ключевые навыки:</li>
         <li>Образование:</li>
         <li>Повышение квалификации, курсы:</li>
-        <li><a href="#">Портфолио</a></li>
+        <li><a href="https://github.com/Ludo4ka/CourseBelka.git">Портфолио</a></li>
         <li>Рекомендации:</li>
       </ul>
     </div>
+
+<!-- ДЗ №2 (Формы)-->
+    <div class="feedback">
+      <h3 class="section-title">Ваш фидбэк важен для меня, благодарю за любую обратную связь!</h3>
+      <form class="feedback-form" action="mailto:belki.quest@gmail.com?subject=Фидбэк по резюме"  enctype="text/plain"  method="post"  accept-charset="utf-8" onsubmit="prove(this); return false;" >
+        <div  class="feedback-form-group"> 
+          <label for="topic">Тема сообщения:</label>
+          <select name="topic" id="topic">
+              <option value="Дополнительные вопросы">Дополнительные вопросы</option>
+              <option  value="Приглашаем на собеседование">Приглашаем на собеседование</option>
+              <option value="Вы попали в кадровый резерв">Вы попали в кадровый резерв</option>
+              <option value="Спасибо. Не интересно">Спасибо. Не интересно</option>
+            </select>
+        </div>
+
+        <div class="feedback-form-group">
+          <label for="message">Текст сообщения:</label>
+          <textarea name="message" id="message"></textarea> 
+        </div>    
+        <div  class="feedback-form-group"> 
+            <label for="file"></label>
+            <input type="file" name="file" enctype="multipart/form-data">
+        </div>
+        <input type="submit" class="btn" value="Отправить">
+      </form>
+    </div>
+
+
+
     <div class="footer">
       <ul>
         <li> Контакты: +7 (915) 481-41-78 </li>
         <li><a class="social_btn" href="https://instagram.com/liudmilashushakova/"></a></li>
       </ul>
     </div>
-</body>
+ </body>
 </html>
